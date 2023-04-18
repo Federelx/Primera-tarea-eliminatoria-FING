@@ -246,42 +246,6 @@ bool hayEventosFecha(TAgenda agenda, TFecha fecha) {
     /*binaria.                              */
     if (agenda->tope_agenda > 0)
     {
-        /*bool detras,delante;
-        detras = false;
-        delante = false;
-        if (((compararTFechas(fechaTEvento(agenda->agenda_arr[agenda->tope_agenda % 2]),fecha) == 0)))
-        {
-            return res = true;               
-        }
-        else if ((compararTFechas(fechaTEvento(agenda->agenda_arr[agenda->tope_agenda % 2]),fecha) == 1))
-        {
-            detras = true;
-        }
-        else if ((compararTFechas(fechaTEvento(agenda->agenda_arr[agenda->tope_agenda % 2]),fecha) == -1))
-        {
-            delante = true;
-        }
-        if (detras)
-        {
-            for (int i = (agenda->tope_agenda % 2) - 1; i >= 0; i--)
-            {
-                if (((compararTFechas(fechaTEvento(agenda->agenda_arr[i]),fecha) == 0)))
-                {
-                    return res = true;
-                }
-            }
-            
-        }
-        if (delante)
-        {
-            for (int i = (agenda->tope_agenda % 2) - 1; i <= agenda->tope_agenda - 1; i--)
-            {
-                if (((compararTFechas(fechaTEvento(agenda->agenda_arr[i]),fecha) == 0)))
-                {
-                    return res = true;
-                }
-            }
-        }*/
         res = busquedaBinaria(agenda,fecha);
     }
     /****** Fin de parte Parte 5.7 *****/
